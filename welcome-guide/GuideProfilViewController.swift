@@ -8,11 +8,11 @@
 
 import UIKit
 
-class GuideProfilViewController: UIViewController {
+class GuideProfilViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         let makeRequstButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "showRequest")
