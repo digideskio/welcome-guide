@@ -17,6 +17,7 @@ class GuideProfilViewController: UITableViewController {
         
         let makeRequstButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Reply, target: self, action: "showRequest")
         self.navigationItem.rightBarButtonItem = makeRequstButton
+        self.title = "Marcel"
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +28,10 @@ class GuideProfilViewController: UITableViewController {
     func showRequest() {
         
         self.performSegueWithIdentifier("Show Request", sender: nil)
+    }
+    
+    @IBAction func unwindToGuideViewController(segue: UIStoryboardSegue) {
+        
     }
 
     /*
