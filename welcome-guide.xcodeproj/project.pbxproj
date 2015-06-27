@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C702FB7A1B3EE3DB00137B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C702FB791B3EE3DB00137B55 /* AppDelegate.swift */; };
-		C702FB7C1B3EE3DB00137B55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C702FB7B1B3EE3DB00137B55 /* ViewController.swift */; };
 		C702FB7F1B3EE3DB00137B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C702FB7D1B3EE3DB00137B55 /* Main.storyboard */; };
 		C702FB811B3EE3DB00137B55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C702FB801B3EE3DB00137B55 /* Images.xcassets */; };
 		C702FB841B3EE3DB00137B55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C702FB821B3EE3DB00137B55 /* LaunchScreen.xib */; };
 		C702FB901B3EE3DB00137B55 /* welcome_guideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C702FB8F1B3EE3DB00137B55 /* welcome_guideTests.swift */; };
+		C792F88E1B3EE91000A6316F /* GuideProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792F88D1B3EE91000A6316F /* GuideProfilViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		C702FB741B3EE3DB00137B55 /* welcome-guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "welcome-guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C702FB781B3EE3DB00137B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C702FB791B3EE3DB00137B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C702FB7B1B3EE3DB00137B55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C702FB7E1B3EE3DB00137B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C702FB801B3EE3DB00137B55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C702FB831B3EE3DB00137B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C702FB891B3EE3DB00137B55 /* welcome-guideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "welcome-guideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C702FB8E1B3EE3DB00137B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C702FB8F1B3EE3DB00137B55 /* welcome_guideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcome_guideTests.swift; sourceTree = "<group>"; };
+		C792F88D1B3EE91000A6316F /* GuideProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideProfilViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 		C702FB761B3EE3DB00137B55 /* welcome-guide */ = {
 			isa = PBXGroup;
 			children = (
+				C792F88D1B3EE91000A6316F /* GuideProfilViewController.swift */,
 				C702FB791B3EE3DB00137B55 /* AppDelegate.swift */,
-				C702FB7B1B3EE3DB00137B55 /* ViewController.swift */,
 				C702FB7D1B3EE3DB00137B55 /* Main.storyboard */,
 				C702FB801B3EE3DB00137B55 /* Images.xcassets */,
 				C702FB821B3EE3DB00137B55 /* LaunchScreen.xib */,
@@ -212,8 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C702FB7C1B3EE3DB00137B55 /* ViewController.swift in Sources */,
 				C702FB7A1B3EE3DB00137B55 /* AppDelegate.swift in Sources */,
+				C792F88E1B3EE91000A6316F /* GuideProfilViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +411,7 @@
 				C702FB951B3EE3DB00137B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C702FB961B3EE3DB00137B55 /* Build configuration list for PBXNativeTarget "welcome-guideTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +420,7 @@
 				C702FB981B3EE3DB00137B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
