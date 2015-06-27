@@ -15,7 +15,6 @@
 		AA3CC9931B3F547B004FDE6B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CC9921B3F547B004FDE6B /* MobileCoreServices.framework */; };
 		AA3CC9951B3F5480004FDE6B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CC9941B3F5480004FDE6B /* QuartzCore.framework */; };
 		AA3CC9971B3F5486004FDE6B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CC9961B3F5486004FDE6B /* Security.framework */; };
-		AA3CC9991B3F548E004FDE6B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CC9981B3F548E004FDE6B /* StoreKit.framework */; };
 		AA3CC99B1B3F5493004FDE6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CC99A1B3F5493004FDE6B /* SystemConfiguration.framework */; };
 		AA3CC99D1B3F5498004FDE6B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CC99C1B3F5498004FDE6B /* libz.dylib */; };
 		AA3CC99F1B3F54A0004FDE6B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CC99E1B3F54A0004FDE6B /* libsqlite3.dylib */; };
@@ -55,7 +54,6 @@
 		AA3CC9921B3F547B004FDE6B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AA3CC9941B3F5480004FDE6B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AA3CC9961B3F5486004FDE6B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		AA3CC9981B3F548E004FDE6B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AA3CC99A1B3F5493004FDE6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AA3CC99C1B3F5498004FDE6B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AA3CC99E1B3F54A0004FDE6B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -97,7 +95,6 @@
 				AA3CC99D1B3F5498004FDE6B /* libz.dylib in Frameworks */,
 				AA3CC99B1B3F5493004FDE6B /* SystemConfiguration.framework in Frameworks */,
 				AA3CC9AC1B3F54DF004FDE6B /* Parse.framework in Frameworks */,
-				AA3CC9991B3F548E004FDE6B /* StoreKit.framework in Frameworks */,
 				AA3CC9971B3F5486004FDE6B /* Security.framework in Frameworks */,
 				AA3CC9951B3F5480004FDE6B /* QuartzCore.framework in Frameworks */,
 				AA3CC9931B3F547B004FDE6B /* MobileCoreServices.framework in Frameworks */,
@@ -122,26 +119,7 @@
 		C702FB6B1B3EE3DB00137B55 = {
 			isa = PBXGroup;
 			children = (
-				AA3CC9A51B3F54DF004FDE6B /* Bolts.framework */,
-				AA3CC9A61B3F54DF004FDE6B /* Parse.framework */,
-				AA3CC9A71B3F54DF004FDE6B /* ParseCrashReporting.framework */,
-				AA3CC9A81B3F54DF004FDE6B /* ParseFacebookUtils.framework */,
-				AA3CC9A91B3F54DF004FDE6B /* ParseFacebookUtilsV4.framework */,
-				AA3CC9AA1B3F54DF004FDE6B /* ParseUI.framework */,
-				AA3CC9A21B3F54AE004FDE6B /* Accounts.framework */,
-				AA3CC9A01B3F54A9004FDE6B /* Social.framework */,
-				AA3CC99E1B3F54A0004FDE6B /* libsqlite3.dylib */,
-				AA3CC99C1B3F5498004FDE6B /* libz.dylib */,
-				AA3CC99A1B3F5493004FDE6B /* SystemConfiguration.framework */,
-				AA3CC9981B3F548E004FDE6B /* StoreKit.framework */,
-				AA3CC9961B3F5486004FDE6B /* Security.framework */,
-				AA3CC9941B3F5480004FDE6B /* QuartzCore.framework */,
-				AA3CC9921B3F547B004FDE6B /* MobileCoreServices.framework */,
-				AA3CC9901B3F5475004FDE6B /* CoreLocation.framework */,
-				AA3CC98E1B3F546E004FDE6B /* CoreGraphics.framework */,
-				AA3CC98C1B3F546A004FDE6B /* CFNetwork.framework */,
-				AA3CC98A1B3F5462004FDE6B /* AudioToolbox.framework */,
-				C7E4BAFC1B3F1B6E0039718C /* MapKit.framework */,
+				C7F9C4681B3F60670029D6AC /* Frameworks */,
 				C702FB761B3EE3DB00137B55 /* welcome-guide */,
 				C702FB8C1B3EE3DB00137B55 /* welcome-guideTests */,
 				C702FB751B3EE3DB00137B55 /* Products */,
@@ -197,6 +175,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C7F9C4681B3F60670029D6AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3CC9A51B3F54DF004FDE6B /* Bolts.framework */,
+				AA3CC9A61B3F54DF004FDE6B /* Parse.framework */,
+				AA3CC9A71B3F54DF004FDE6B /* ParseCrashReporting.framework */,
+				AA3CC9A81B3F54DF004FDE6B /* ParseFacebookUtils.framework */,
+				AA3CC9A91B3F54DF004FDE6B /* ParseFacebookUtilsV4.framework */,
+				AA3CC9AA1B3F54DF004FDE6B /* ParseUI.framework */,
+				AA3CC9A21B3F54AE004FDE6B /* Accounts.framework */,
+				AA3CC9A01B3F54A9004FDE6B /* Social.framework */,
+				AA3CC99E1B3F54A0004FDE6B /* libsqlite3.dylib */,
+				AA3CC99C1B3F5498004FDE6B /* libz.dylib */,
+				AA3CC99A1B3F5493004FDE6B /* SystemConfiguration.framework */,
+				AA3CC9961B3F5486004FDE6B /* Security.framework */,
+				AA3CC9941B3F5480004FDE6B /* QuartzCore.framework */,
+				AA3CC9921B3F547B004FDE6B /* MobileCoreServices.framework */,
+				AA3CC9901B3F5475004FDE6B /* CoreLocation.framework */,
+				AA3CC98E1B3F546E004FDE6B /* CoreGraphics.framework */,
+				AA3CC98C1B3F546A004FDE6B /* CFNetwork.framework */,
+				AA3CC98A1B3F5462004FDE6B /* AudioToolbox.framework */,
+				C7E4BAFC1B3F1B6E0039718C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,7 +251,12 @@
 				TargetAttributes = {
 					C702FB731B3EE3DB00137B55 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 3T5GPE34B5;
+						DevelopmentTeam = 6BS59SC942;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					C702FB881B3EE3DB00137B55 = {
 						CreatedOnToolsVersion = 6.3.2;
