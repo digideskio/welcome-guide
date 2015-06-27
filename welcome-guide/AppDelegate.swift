@@ -19,6 +19,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.tintColor = UIColor(red: 30/255.0, green: 82/255.0, blue: 148/255.0, alpha: 1)
         
+//        [Parse enableLocalDatastore];
+//        
+//        // Initialize Parse.
+//        [Parse setApplicationId:@"4UnxzvEFw6hzs87Ux6XVJlmJ6LbNcOp9dZLhVHnL"
+//        clientKey:@"58BBTSKfVWq1gs8wLVpLqtR9cidtECI13iClntm8"];
+//        
+//        // [Optional] Track statistics around application opens.
+//        [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+        
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId("dS3rAMmDvIsvWkBWyS9txTRlSNYPpIFboZ8eRReK", clientKey: "VwlKPXDal0BVlol4q2zxJWxwzUFO7Eaw6Z1TsZVN")
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: { (success, error) -> Void in
+            if let err = error {
+                print(err)
+            }
+        })
+        
         return true
     }
 
