@@ -33,6 +33,7 @@
 		C702FB901B3EE3DB00137B55 /* welcome_guideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C702FB8F1B3EE3DB00137B55 /* welcome_guideTests.swift */; };
 		C792F88E1B3EE91000A6316F /* GuideProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792F88D1B3EE91000A6316F /* GuideProfilViewController.swift */; };
 		C7BBD5C21B3F625500AA4CFC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BBD5C11B3F625500AA4CFC /* Request.swift */; };
+		C7BBD5C61B3F6AAC00AA4CFC /* ConversationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BBD5C51B3F6AAC00AA4CFC /* ConversationTableViewController.swift */; };
 		C7E4BAFD1B3F1B6E0039718C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E4BAFC1B3F1B6E0039718C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		C702FB8F1B3EE3DB00137B55 /* welcome_guideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcome_guideTests.swift; sourceTree = "<group>"; };
 		C792F88D1B3EE91000A6316F /* GuideProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideProfilViewController.swift; sourceTree = "<group>"; };
 		C7BBD5C11B3F625500AA4CFC /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = model/Request.swift; sourceTree = "<group>"; };
+		C7BBD5C51B3F6AAC00AA4CFC /* ConversationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationTableViewController.swift; sourceTree = "<group>"; };
 		C7E4BAFC1B3F1B6E0039718C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 				C7BBD5C41B3F628400AA4CFC /* Models */,
 				C792F88D1B3EE91000A6316F /* GuideProfilViewController.swift */,
 				66E071A41B3F29FD00DA4810 /* RequestTableViewController.swift */,
+				C7BBD5C51B3F6AAC00AA4CFC /* ConversationTableViewController.swift */,
 				C702FB791B3EE3DB00137B55 /* AppDelegate.swift */,
 				C702FB7D1B3EE3DB00137B55 /* Main.storyboard */,
 				C702FB801B3EE3DB00137B55 /* Images.xcassets */,
@@ -321,6 +324,7 @@
 			files = (
 				C702FB7A1B3EE3DB00137B55 /* AppDelegate.swift in Sources */,
 				C7BBD5C21B3F625500AA4CFC /* Request.swift in Sources */,
+				C7BBD5C61B3F6AAC00AA4CFC /* ConversationTableViewController.swift in Sources */,
 				66E071A51B3F29FD00DA4810 /* RequestTableViewController.swift in Sources */,
 				C792F88E1B3EE91000A6316F /* GuideProfilViewController.swift in Sources */,
 			);
