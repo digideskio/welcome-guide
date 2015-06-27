@@ -1,19 +1,19 @@
 //
-//  Request.swift
+//  Tour.swift
 //  
 //
-//  Created by Philip Heinser on 28.06.15.
+//  Created by Christian Praiß on 28/06/15.
 //
 //
 
 import UIKit
 
-class Request: PFObject, PFSubclassing {
+class Tour: PFObject, PFSubclassing {
     
-    @NSManaged var numberOfPeople: NSNumber
-    @NSManaged var startTime: NSDate
-    @NSManaged var tour: Tour
-    
+    @NSManaged var location: PFGeoPoint
+    @NSManaged var price: NSNumber
+    @NSManaged var comment: String
+    @NSManaged var categories: [String]
     
     override class func initialize() {
         var onceToken : dispatch_once_t = 0;
@@ -25,6 +25,6 @@ class Request: PFObject, PFSubclassing {
     }
     
     class func parseClassName() -> String {
-        return "TourRequest"
+        return "Tour"
     }
 }
