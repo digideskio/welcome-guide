@@ -102,6 +102,7 @@
 		C7D580211B3FE1B400377C9B /* Bond+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D580031B3FE1B400377C9B /* Bond+UIView.swift */; };
 		C7D580221B3FE1B400377C9B /* Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D580051B3FE1B400377C9B /* Bond.swift */; };
 		C7D580231B3FE1B400377C9B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7D580061B3FE1B400377C9B /* Info.plist */; };
+		C7D580251B3FFDC200377C9B /* TourTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D580241B3FFDC200377C9B /* TourTableView.swift */; };
 		C7E4BAFD1B3F1B6E0039718C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E4BAFC1B3F1B6E0039718C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -261,6 +262,7 @@
 		C7D580041B3FE1B400377C9B /* Bond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bond.h; sourceTree = "<group>"; };
 		C7D580051B3FE1B400377C9B /* Bond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bond.swift; sourceTree = "<group>"; };
 		C7D580061B3FE1B400377C9B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D580241B3FFDC200377C9B /* TourTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourTableView.swift; sourceTree = "<group>"; };
 		C7E4BAFC1B3F1B6E0039718C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -327,6 +329,7 @@
 				C792F88D1B3EE91000A6316F /* GuideProfilViewController.swift */,
 				66E071A41B3F29FD00DA4810 /* RequestTableViewController.swift */,
 				C7BBD5C71B3F729B00AA4CFC /* ProfileTableViewController.swift */,
+				C7D580241B3FFDC200377C9B /* TourTableView.swift */,
 				C7D57FE61B3FDC7A00377C9B /* ChatViewController.swift */,
 				C7BBD5C51B3F6AAC00AA4CFC /* ConversationTableViewController.swift */,
 				C702FB791B3EE3DB00137B55 /* AppDelegate.swift */,
@@ -725,6 +728,7 @@
 				C7D57FCE1B3FDAC600377C9B /* JSQMessagesBubbleImage.m in Sources */,
 				C7D580211B3FE1B400377C9B /* Bond+UIView.swift in Sources */,
 				C7D57FE01B3FDAC600377C9B /* JSQMessagesTypingIndicatorFooterView.m in Sources */,
+				C7D580251B3FFDC200377C9B /* TourTableView.swift in Sources */,
 				C7D57FD31B3FDAC600377C9B /* JSQMessagesCollectionViewCell.m in Sources */,
 				C7D57FBF1B3FDAC600377C9B /* JSQMessagesKeyboardController.m in Sources */,
 				C7BBD5C61B3F6AAC00AA4CFC /* ConversationTableViewController.swift in Sources */,
@@ -905,6 +909,7 @@
 				INFOPLIST_FILE = "welcome-guide/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4f7d2288-bb27-4ff6-86ed-4ae0fb3dd521";
 				SWIFT_OBJC_BRIDGING_HEADER = "welcome-guide/welcome-guide-BridgingHeader.h";
 			};
 			name = Debug;
@@ -913,7 +918,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

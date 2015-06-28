@@ -15,6 +15,7 @@ class Request: PFObject, PFSubclassing {
     @NSManaged var tour: Tour
     @NSManaged var message: String
     @NSManaged var pickUpLocation: PFGeoPoint
+    @NSManaged var publicRequest: Bool
     
     
     override class func initialize() {

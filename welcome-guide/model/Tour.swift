@@ -13,6 +13,7 @@ class Tour: PFObject, PFSubclassing {
     @NSManaged var location: PFGeoPoint
     @NSManaged var price: NSNumber
     @NSManaged var comment: String
+    @NSManaged var languages: String
     @NSManaged var categories: [String]
     
     override class func initialize() {

@@ -41,6 +41,24 @@ class RequestTableViewController: UITableViewController, UITextFieldDelegate {
             personLabel.text = "\(people) Person"
         }
     }
+    @IBAction func sendPrivate(sender: AnyObject) {
+        
+             request?.publicRequest = false
+            request?.startTime = NSDate()
+            request?.saveInBackgroundWithBlock({ (saved, error) -> Void in
+            
+            self.performSegueWithIdentifier("exit", sender: nil)
+        })
+    }
+    
+    @IBAction func sendPublic(sender: AnyObject) {
+            request?.publicRequest = true
+            request?.startTime = NSDate()
+        request?.saveInBackgroundWithBlock({ (saved, error) -> Void in
+            
+            self.performSegueWithIdentifier("exit", sender: nil)
+        })
+    }
     
     @IBAction func updateRequest(sender: AnyObject) {
         

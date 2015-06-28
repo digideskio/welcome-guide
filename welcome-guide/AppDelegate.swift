@@ -19,15 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.tintColor = UIColor(red: 30/255.0, green: 82/255.0, blue: 148/255.0, alpha: 1)
         
-//        [Parse enableLocalDatastore];
-//        
-//        // Initialize Parse.
-//        [Parse setApplicationId:@"4UnxzvEFw6hzs87Ux6XVJlmJ6LbNcOp9dZLhVHnL"
-//        clientKey:@"58BBTSKfVWq1gs8wLVpLqtR9cidtECI13iClntm8"];
-//        
-//        // [Optional] Track statistics around application opens.
-//        [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-        
         Parse.enableLocalDatastore()
         Parse.setApplicationId("dS3rAMmDvIsvWkBWyS9txTRlSNYPpIFboZ8eRReK", clientKey: "VwlKPXDal0BVlol4q2zxJWxwzUFO7Eaw6Z1TsZVN")
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: { (success, error) -> Void in
@@ -36,7 +27,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         })
         
+        if application.respondsToSelector("registerUserNotificationSettings:") {
+            
+            let types:UIUserNotificationType = (.Alert | .Badge | .Sound)
+            let settings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+            
+            application.registerUserNotificationSettings(settings)
+            application.registerForRemoteNotifications()
+            
+        } else {
+            // Register for Push Notifications before iOS 8
+            application.registerForRemoteNotificationTypes(.Alert | .Badge | .Sound)
+        }
+        
         return true
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        println("didRegisterForRemoteNotificationsWithDeviceToken")
+        
+        let currentInstallation = PFInstallation.currentInstallation()
+        
+        currentInstallation.setDeviceTokenFromData(deviceToken)
+        currentInstallation.saveInBackgroundWithBlock { (succeeded, e) -> Void in
+            //code
+            
+        }
+        
+        currentInstallation.addUniqueObject("", forKey: "channels")
+        currentInstallation.saveInBackgroundWithBlock(nil)
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        println("failed to register for remote notifications:  (error)")
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        println("didReceiveRemoteNotification")
+        PFPush.handlePush(userInfo)
     }
 
     func applicationWillResignActive(application: UIApplication) {
