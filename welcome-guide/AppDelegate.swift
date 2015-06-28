@@ -40,6 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application.registerForRemoteNotificationTypes(.Alert | .Badge | .Sound)
         }
         
+        NSThread.sleepForTimeInterval(1.2)
+        
         return true
     }
     
