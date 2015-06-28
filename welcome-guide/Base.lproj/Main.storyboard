@@ -1445,7 +1445,7 @@ I can show you around</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oL-Zm-eev" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EOW-Ly-xDg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2891" y="1504"/>
+            <point key="canvasLocation" x="3066" y="1914"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HMF-VQ-YDh">
@@ -1575,15 +1575,27 @@ I can show you around</string>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElL-Nk-wcb">
+                                                    <rect key="frame" x="459" y="8" width="133" height="30"/>
+                                                    <animations/>
+                                                    <state key="normal" title="Open Conversation">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="GmY-Yn-oxz" kind="show" id="4n6-ud-voR"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstItem="Fi0-UK-yli" firstAttribute="leading" secondItem="on7-fV-tlo" secondAttribute="leadingMargin" id="0b1-zM-qnB"/>
+                                                <constraint firstItem="ElL-Nk-wcb" firstAttribute="top" secondItem="on7-fV-tlo" secondAttribute="topMargin" id="8b6-ek-K9J"/>
                                                 <constraint firstItem="cPS-wx-OVn" firstAttribute="leading" secondItem="on7-fV-tlo" secondAttribute="leadingMargin" id="9X4-jR-pYQ"/>
                                                 <constraint firstItem="cPS-wx-OVn" firstAttribute="top" secondItem="on7-fV-tlo" secondAttribute="topMargin" id="DA7-nd-i1k"/>
                                                 <constraint firstItem="Fi0-UK-yli" firstAttribute="top" secondItem="cPS-wx-OVn" secondAttribute="bottom" constant="10" id="MTy-lN-0SL"/>
                                                 <constraint firstItem="cPS-wx-OVn" firstAttribute="leading" secondItem="on7-fV-tlo" secondAttribute="leadingMargin" id="UgK-aT-s9w"/>
                                                 <constraint firstItem="4ic-iO-CW8" firstAttribute="leading" secondItem="on7-fV-tlo" secondAttribute="leadingMargin" id="enw-Ss-4zD"/>
+                                                <constraint firstItem="ElL-Nk-wcb" firstAttribute="trailing" secondItem="on7-fV-tlo" secondAttribute="trailingMargin" id="gEn-aq-6Rk"/>
                                                 <constraint firstItem="4ic-iO-CW8" firstAttribute="top" secondItem="Fi0-UK-yli" secondAttribute="bottom" constant="10" id="hOi-Sr-Q0v"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1762,18 +1774,6 @@ I can show you around</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Conversation" id="cvb-O5-WM2">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="160" id="7wP-bH-mRk">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7wP-bH-mRk" id="4AL-J4-dzY">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="b2c-fO-QnA" id="YMA-tW-eZ7"/>
@@ -1786,6 +1786,25 @@ I can show you around</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AxN-rp-cWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2212" y="619"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="dWh-Ft-NUF">
+            <objects>
+                <viewController id="GmY-Yn-oxz" customClass="ChatViewController" customModule="welcome_guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UUk-jY-vZF"/>
+                        <viewControllerLayoutGuide type="bottom" id="fha-WG-QZI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xCa-La-6Rz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XiF-ah-R7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2982" y="1065"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iDq-O3-XIe">
