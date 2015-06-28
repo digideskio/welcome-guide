@@ -13,6 +13,8 @@ class Request: PFObject, PFSubclassing {
     @NSManaged var numberOfPeople: NSNumber
     @NSManaged var startTime: NSDate
     @NSManaged var tour: Tour
+    @NSManaged var message: String
+    @NSManaged var pickUpLocation: PFGeoPoint
     
     
     override class func initialize() {

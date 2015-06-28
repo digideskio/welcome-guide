@@ -1318,8 +1318,11 @@ I can show you around</string>
                                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="q1i-3i-brQ">
                                                             <rect key="frame" x="136" y="20" width="94" height="29"/>
                                                             <animations/>
+                                                            <connections>
+                                                                <action selector="updateRequest:" destination="vsS-rZ-zZZ" eventType="touchUpInside" id="mm1-3K-4uN"/>
+                                                            </connections>
                                                         </stepper>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2 Personen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWE-gA-jFQ">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0 Personen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWE-gA-jFQ">
                                                             <rect key="frame" x="20" y="24" width="87" height="21"/>
                                                             <animations/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -1357,13 +1360,16 @@ I can show you around</string>
                                                     <animations/>
                                                 </mapView>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick me up here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZU-hq-LXz">
-                                                    <rect key="frame" x="200" y="8" width="200" height="30"/>
+                                                    <rect key="frame" x="150" y="8" width="300" height="30"/>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="200" id="FZz-1S-seH"/>
+                                                        <constraint firstAttribute="width" constant="300" id="FZz-1S-seH"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="vsS-rZ-zZZ" id="m85-s3-c5f"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <animations/>
@@ -1383,7 +1389,7 @@ I can show you around</string>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HUz-bJ-582" id="k1w-Lh-7eu">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Add a private message to Marcel here" translatesAutoresizingMaskIntoConstraints="NO" id="pra-3Q-vm2">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Add a description here" translatesAutoresizingMaskIntoConstraints="NO" id="pra-3Q-vm2">
                                                     <rect key="frame" x="8" y="7" width="584" height="143.5"/>
                                                     <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1441,11 +1447,19 @@ I can show you around</string>
                     </tableView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
+                    <connections>
+                        <outlet property="dateButton" destination="CIN-ue-h42" id="86o-l4-MAh"/>
+                        <outlet property="mapView" destination="lIB-N5-qHi" id="hh7-9x-zVE"/>
+                        <outlet property="messageTextView" destination="pra-3Q-vm2" id="T4B-ge-b3m"/>
+                        <outlet property="personLabel" destination="pWE-gA-jFQ" id="iRn-Gl-e5B"/>
+                        <outlet property="personStepper" destination="q1i-3i-brQ" id="dbf-tj-Umy"/>
+                        <outlet property="pickupTextField" destination="UZU-hq-LXz" id="plk-7u-S7m"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oL-Zm-eev" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EOW-Ly-xDg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3066" y="1914"/>
+            <point key="canvasLocation" x="2982" y="2128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HMF-VQ-YDh">
