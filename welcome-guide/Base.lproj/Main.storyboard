@@ -48,13 +48,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fKp-lq-sNc">
-                                <rect key="frame" x="0.0" y="177" width="600" height="162"/>
-                                <animations/>
-                                <date key="date" timeIntervalSinceReferenceDate="457106929.291619">
-                                    <!--2015-06-27 14:08:49 +0000-->
-                                </date>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arrival" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jL-K1-WBZ">
                                 <rect key="frame" x="33" y="148" width="48" height="21"/>
                                 <animations/>
@@ -78,6 +71,13 @@
                                     <segue destination="kGi-8M-d6g" kind="show" id="Zzc-xL-UAZ"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="fKp-lq-sNc">
+                                <rect key="frame" x="0.0" y="177" width="600" height="162"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="457106929.291619">
+                                    <!--2015-06-27 14:08:49 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1471,7 +1471,7 @@ I can show you around</string>
         <scene sceneID="Mhk-72-cbu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LQf-oh-Ohd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Tours" id="nbP-sb-Dp3"/>
+                    <tabBarItem key="tabBarItem" title="My Tours" image="koffer" selectedImage="koffer_sel" id="nbP-sb-Dp3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tpM-rA-FTU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1487,10 +1487,10 @@ I can show you around</string>
             </objects>
             <point key="canvasLocation" x="635" y="776"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Profile Table View Controller-->
         <scene sceneID="lEW-x6-bqd">
             <objects>
-                <tableViewController id="cza-EI-NYU" sceneMemberID="viewController">
+                <tableViewController id="cza-EI-NYU" customClass="ProfileTableViewController" customModule="welcome_guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f7U-3q-9nM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1511,7 +1511,27 @@ I can show you around</string>
                             <outlet property="delegate" destination="cza-EI-NYU" id="61s-5M-Oyx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="6Ei-Dg-sn6"/>
+                    <navigationItem key="navigationItem" id="6Ei-Dg-sn6">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xn7-fy-4tg">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OJY-hG-cei">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="cza-EI-NYU" eventType="touchUpInside" id="s01-7i-iv6"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="login:" destination="cza-EI-NYU" id="CvP-v4-250"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginButton" destination="xn7-fy-4tg" id="mXE-Hl-Ztl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCo-zQ-ePa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1794,6 +1814,8 @@ I can show you around</string>
         <image name="cofe" width="44" height="44"/>
         <image name="food" width="44" height="44"/>
         <image name="guide-profil" width="1024" height="681"/>
+        <image name="koffer" width="40" height="40"/>
+        <image name="koffer_sel" width="40" height="40"/>
         <image name="nightlife" width="44" height="44"/>
         <image name="shopping" width="44" height="44"/>
         <image name="star" width="100" height="100"/>

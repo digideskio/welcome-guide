@@ -10,4 +10,5 @@
 #define welcome_guide_welcome_guide_BridgingHeader_h
 
 #import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
 #endif
